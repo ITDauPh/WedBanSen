@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nature - Refresh your Home</title>
+        <meta name="description" content="- ngôi nhà xanh">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            p {
+                color:rgba(235, 111, 11, 0.87);
+            }
+            h1 {
+                background-color: yellow;
+                text-align: center;
+            }
+            body{
+                
+                background-repeat: no-repeat;
+                background-attachment:fixed;
+                background-size: cover;
+                background-color: rgba(0, 251, 226, 0.4);
+                padding: 4px;
+            }   
+            address{
+                color:aqua;
+            }
+            table, th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+               
+            }
+            #tb1{
+                background-color: blueviolet;
+            }
+            li {
+                float: left;
+            }
+            ul{
+                padding: 0;
+                list-style-type: none;
+                margin: 0;
+                overflow: hidden;
+                background-color: rgba(29, 28, 28, 0.2);
+               
+            }
+            li a{
+                text-decoration: none;
+                padding: 20px;
+                
+                display: block;
+            }
+            li a:hover{
+                background-color: aqua;
+                color: salmon;
+            }
+            @media screen and (min-width:800px) {
+                .container,.bar1,.bar2,.bar3{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                li {
+                    display: none;
+                    
+                }
+                
+             }
+             .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+    .container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+           
+        </style>
+        <script>
+            function change(s){
+                var pic;
+                if(s == 1)
+                   pic = "apple-iphone-12-pro-max-5947688_1280.png";
+                if(s == 0)
+                    pic = "—Pngtree—red mi note 5 pro_5052535.png";
+                document.getElementById("myImage").src = pic;
+                
+            }
+            function myFunction(x) {
+                 x.classList.toggle("change");
+                }
+
+        </script>
+    </head>
+    <body >
+        
+        <h1 id="head" >This is a HEADING</h1>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản Phẩm</a></li>
+            <li><a href="#">Thông tin khuyến mãi</a></li>
+            <li><a href="#">Giao hàng</a></li>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+        </ul>
+        
+        <p><a href="#last">Cuối trang</a></p>
+        <p>This is My information: </p>
+        <p><abbr title="Instagram">IG:</abbr></p>
+        <a href="https://www.instagram.com/phan.van_dau/" title="My Instagram" target="_top">https://www.instagram.com/phan.van_dau/</a>
+        <p style="font-size: 150%;"><abbr title="Facebook">FB:</abbr></p>
+        <a href="https://www.facebook.com/SunbwaySuerfs/" title="My Facebook">https://www.facebook.com/SunbwaySuerfs/</a>
+        <p></p>
+        <img src="2018-06-07-11-30-31.jpg" alt="Bơ" width=200px height=300px usemap="#workmap">
+        <map name="workmap">
+            <area shape="rect" coords="75,100,125,200" alt="Qua bo" href="https://www.instagram.com/phan.van_dau/" target="_blank">
+        </map>
+    
+        <!--Address-->
+        <address>
+            Phan Văn Dậu<br>
+            0868842242<br>
+            2225 Phạm Thế Hiển, P.6, Q.8, Tp.HCM
+            <a href="mailto:daugaphan85@gmail.com">gmail</a>
+        </address>
+    
+   
+        <iframe src="https://bizflycloud.vn/"width="90%" height="500px" name="iframe_a"></iframe>
+
+        <p><a href="https://www.facebook.com" target="iframe_a">Facebook</a></p>
+    
+        <table id="tb1">
+            <caption>Bảng thông tin</caption>
+            <tr>
+                <th >Họ và tên</th>
+                <th>Địa chỉ</th>
+                <th>Số điện thoại</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Phan Văn Dậu</td>
+                <td>2225 Phạm Thế Hiển</td>
+                <td>0868842242</td>
+                <td>daugaphan85@gmail.com</td>
+            </tr>
+        
+        </table>
+        <!--Trích dẫn ngoại nguồn-->
+        <blockquote cite="https://genk.vn/phia-sau-thanh-cong-cua-amazon-han-quoc-noi-nhan-vien-chi-nhu-hang-dung-mot-lan-cua-he-thong-ai-20210705163541214.chn">Sáng sớm ngày 12/10/2020, Jang Deok-joon, 27 tuổi, trở về nhà và nhảy vào bồn tắm sau khi làm xong ca đêm tại Coupang, tập đoàn thương mại điện tử khổng lồ của Hàn Quốc. Anh đã làm việc tại nhà kho của công ty ở phía nam thành phố Daegu trong hơn một năm, 
+            <q>chuyên chở</q> các thùng chứa đầy các món hàng, thứ sau đó sẽ được chuyển đến khắp các trung tâm giao hàng. trong thành phố.</blockquote>
+        <hr>
+        <h1>This is a BODY</h1>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="s21ultra.jpg">
+            <source media="(min-width: 700px)" srcset="iphone-12-purple-select-2021-1.png">
+            <source media="(min-width: 100px)" srcset="pixel2.jpg">
+            <img src="pixel2.jpg">
+        </picture>
+        <p>Bước đến đèo ngang bóng xế tà</p>
+        <p>Cỏ cây chen lá đá chen hoa</p>
+        <p>Lác đác bên sông tiều vài chú</p>
+        <p>Không nhớ.....=))</p>
+        <!--Số mũ, số chân-->
+        <p>Do you want go to <del>bed</del> <ins>lunch</ins> !</p>
+        <p>H<sub>2</sub> + O<sub>2</sub> --> H<sub>2</sub>O</p>
+        <p>2<sup>2</sup> --> 4</p>
+        <!--Tên tác phẩm-->
+        <p>Tác phẩm <cite>Đèo Ngang</cite> là tác phẩm của bà Huyện Thanh Quang !</p>
+        <!--Ghi đè ngược-->
+        <bdo dir="ltr">If you love me is I love you !</bdo>
+        <h2 id="last">CUỐI TRANG</h2>
+        <p>Surprise ! the last page nè !</p>
+        <pre> Con tim anh mang bao nhớ thương gửi
+            còn mình anh mang nhưn nỗi nhớ
+            một mình anh lạc trong 
+            .
+            -=
+            =
+            =
+            =
+            =
+            =
+            =
+            =
+
+        </pre>
+        <ol>
+            <li>Cà phê</li>
+            <li>Mì Ttrứng</li>
+                <li>Sting</li>
+        </ol>
+        <ul>
+            <li>Cà Phê</li>
+            <li>Mì trứng</li>
+            <li>Sting</li>
+        </ul>
+        <dl>
+            <dt>Cà Phê</dt>
+            <dd>- Cà Phê sữa đá</dd>
+            <dd>- Epreso</dd>
+            <dd>-Cà Phê sữa nóng</dd>
+            <dt>Mì Trứng</dt>
+            <dd>Mì một trứng</dd>
+            <dd>Mì Không</dd>
+        </dl>
+        <p><a href="#head">Lên đầu trang.</a></p>
+        <img id="myImage" src="apple-iphone-12-pro-max-5947688_1280.png" alt="apple and banana" width=20% height=20%>
+        <p>
+            <button type="button" onclick="change(1)"> Iphone</button>
+            <button type="button" onclick="change(0)"> Xiaomi</button>
+        </p>
+    </body>
+</html>
